@@ -81,7 +81,15 @@ class PlanetCollectionViewCell: UICollectionViewCell {
         nameLabel.textAlignment = .center
         addSubview(nameLabel)
         
-        nameLabel.topAnchor
+        // Y Position
+        nameLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 4).isActive = true
+        
+        // X Position
+        nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 2).isActive = true
+        
+        //Width
+        nameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -2).isActive = true
+        
     }
     
 }
